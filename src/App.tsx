@@ -11,6 +11,7 @@ import Passport from "./pages/Passport";
 import Auth from "./pages/Auth";
 import PartnerDashboard from "./pages/PartnerDashboard";
 import NotFound from "./pages/NotFound";
+import ConciergeWidget from "@/components/ConciergeWidget";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,9 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
       <TooltipProvider>
+        <div style={{ background: 'red', color: 'white', padding: '5px', textAlign: 'center', fontWeight: 'bold', fontSize: '10px' }}>
+          DEBUG: App Version 2.0 (HeritagePass Branding Active)
+        </div>
         <Toaster />
         <Sonner />
         <BrowserRouter>
@@ -31,6 +35,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <ConciergeWidget />
       </TooltipProvider>
     </LanguageProvider>
   </QueryClientProvider>

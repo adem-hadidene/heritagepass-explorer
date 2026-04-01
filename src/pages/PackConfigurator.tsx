@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ConciergeWidget from '@/components/ConciergeWidget';
 import { destinations } from '@/data/destinations';
 import { Bus, Hotel, UtensilsCrossed, Mic, Check } from 'lucide-react';
 
@@ -216,7 +215,6 @@ const PackConfigurator = () => {
           </div>
         </div>
       </main>
-      <ConciergeWidget />
       <Footer />
     </div>
   );

@@ -4,7 +4,6 @@ import { destinations } from '@/data/destinations';
 import DestinationCard from '@/components/DestinationCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ConciergeWidget from '@/components/ConciergeWidget';
 import { X } from 'lucide-react';
 import type { Destination } from '@/data/destinations';
 
@@ -78,7 +77,6 @@ const Destinations = () => {
         </div>
       )}
 
-      <ConciergeWidget />
       <Footer />
     </div>
   );

@@ -2,7 +2,6 @@ import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ConciergeWidget from '@/components/ConciergeWidget';
 import DestinationCard from '@/components/DestinationCard';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { destinations } from '@/data/destinations';
@@ -11,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const Index = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
-  const featured = destinations.slice(0, 6);
+  const featured = destinations;
 
   return (
     <div className="min-h-screen bg-background">
@@ -36,8 +35,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <ConciergeWidget />
       <Footer />
     </div>
   );

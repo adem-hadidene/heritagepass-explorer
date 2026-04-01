@@ -1,7 +1,6 @@
 import { useLanguage } from '@/i18n/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ConciergeWidget from '@/components/ConciergeWidget';
 import { Award, QrCode, Stamp, History } from 'lucide-react';
 
 const stamps = Array.from({ length: 12 }, (_, i) => ({
@@ -117,7 +116,6 @@ const Passport = () => {
           </div>
         </div>
       </main>
-      <ConciergeWidget />
       <Footer />
     </div>
   );

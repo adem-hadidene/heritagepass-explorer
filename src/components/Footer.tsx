@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="text-xl font-heading font-bold mb-2">
-              <span className="text-primary">Weekend</span>{' '}
-              <span className="text-accent">Explorer</span>
+              <span className="text-primary">Heritage</span>{' '}
+              <span className="text-accent">Pass</span>
             </h3>
             <p className="text-sm opacity-60 mb-4">HeritagePass</p>
             {/* Newsletter */}

@@ -23,8 +23,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-heading font-bold text-primary">Weekend</span>
-          <span className="text-xl font-heading font-bold text-accent">Explorer</span>
+          <span className="text-xl font-heading font-bold text-primary">Heritage</span>
+          <span className="text-xl font-heading font-bold text-accent">Pass</span>
         </Link>
 
         {/* Desktop nav */}
